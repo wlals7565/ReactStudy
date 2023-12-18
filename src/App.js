@@ -1,10 +1,19 @@
-
-import SassComponent from "./9.2.SassComponet";
+import React from 'react';
+import One from './first';
+import Two from './Two';
+import Three from './Third.js';
+import Four from './Safour.js';
 
 const App = () => {
-  return (<div>
-    <SassComponent/>
-    </div>)
+  return (
+    <One>
+      <Two>
+        <Three>
+          <Four />
+        </Three>
+      </Two>
+    </One>
+  );
 };
 /*
 function getRandomColor() {
